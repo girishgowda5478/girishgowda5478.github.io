@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girish Gowda J — Full Stack Developer &amp; AI Engineer</title>
+    <meta name="description"
+        content="Girish Gowda J, Full Stack Developer and AI Engineer. React, Next.js, Node.js and MongoDB, plus Python, FastAPI, RAG pipelines and LLM agents. Live deployed projects.">
+    <meta name="theme-color" content="#09090a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Girish Gowda J — Full Stack Developer &amp; AI Engineer">
+    <meta property="og:description"
+        content="Full stack apps and GenAI systems: React, Next.js, Node.js, Python, FastAPI and RAG.">
+    <meta property="og:image" content="assets/portrait.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ff2a2a'/%3E%3Ctext x='16' y='23' font-family='Impact,sans-serif' font-size='17' text-anchor='middle' fill='white'%3EGG%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=14">
+
+    <!-- Decide before first paint whether the agent swarm assembles the page.
+         Skipped for reduced-motion users, deep links, and after "Skip" in this tab.
+         If script.js never boots, a watchdog reveals the page after 4s. -->
+    <script>
+        (function () {
+            var d = document.documentElement;
+            var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var skipped = false;
+            try { skipped = sessionStorage.getItem('swarm-skip') === '1'; } catch (e) { }
+            if (!reduce && !skipped && !location.hash) {
+                d.classList.add('swarm-on');
+                setTimeout(function () { if (!window.__swarmBooted) d.classList.remove('swarm-on'); }, 4000);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+        <div class="nav-inner" data-build="nav">
+            <a href="#top" class="brand" aria-label="Girish Gowda J, back to top">
+                <span class="brand-mark">GG</span>
+            </a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#log">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <span class="nav-status" title="Open to full stack and AI engineer roles"><span class="pulse"></span>Open to work</span>
+            <a class="nav-cv" href="assets/Girish-Gowda-FullStack-Resume.pdf" target="_blank" rel="noopener" type="application/pdf">Résumé ↗</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        </div>
+        <nav class="nav-menu" id="nav-menu" aria-label="Mobile">
+            <a href="#about"><span>01</span>About</a>
+            <a href="#stack"><span>02</span>Stack</a>
+            <a href="#projects"><span>03</span>Projects</a>
+            <a href="#log"><span>04</span>Experience</a>
+            <a href="#contact"><span>05</span>Contact</a>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="top">
+            <div class="wrap">
+                <div class="display-word hero-word" data-build="svg.display" aria-hidden="true">
+                    <svg viewBox="0 0 1000 232" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#ff2a2a" stop-opacity="0.02" />
+                                <stop offset="1" stop-color="#ff2a2a" stop-opacity="0.22" />
+                            </linearGradient>
+                        </defs>
+                        <text x="0" y="222" textLength="1000" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+                    </svg>
+                </div>
+
+                <div class="hero-grid">
+                    <div class="hero-intro">
+                        <p class="hello" data-build="p.greeting">Hello, I’m</p>
+                        <h1 class="name-block" data-build="h1.name">Girish<span class="sr-only"> Gowda J</span>.</h1>
+                        <p class="role mono" data-build="p.role"><span class="sq"></span>Full Stack Developer · AI Engineer</p>
+                        <p class="lede" data-build="p.summary">I build <b>full-stack web apps</b> and <b>GenAI systems</b>: React and Next.js frontends, secure APIs, <b>RAG pipelines</b> and <b>LLM agents</b>, shipped live.</p>
+                        <div class="hero-cta" data-build="div.cta">
+                            <a class="btn btn-red" href="#projects">See my projects <span aria-hidden="true">→</span></a>
+                            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                            <a class="btn btn-ghost" href="assets/Girish-Gowda-FullStack-Resume.pdf" target="_blank" rel="noopener" type="application/pdf">View résumé ↗</a>
+                        </div>
+                        <dl class="hero-stats" data-build="dl.stats">
+                            <div><dt>6+</dt><dd>Months full-stack<br>internship</dd></div>
+                            <div><dt>08</dt><dd>Secured API<br>endpoints</dd></div>
+                            <div><dt>07</dt><dd>Projects<br>built</dd></div>
+                        </dl>
+                    </div>
+
+                    <figure class="portrait" data-build="figure.portrait">
+                        <div class="portrait-frame">
+                            <img src="assets/portrait.webp" alt="Portrait of Girish Gowda J" width="666" height="840">
+                        </div>
+                        <figcaption class="mono"><span class="sq"></span>Open to full stack &amp; AI roles</figcaption>
+                    </figure>
+
+                    <div class="caps">
+                        <article class="cap" data-build="card.cap-01">
+                            <div class="cap-top mono"><span class="cap-idx">01.</span><span>Frontend</span></div>
+                            <h2 class="cap-title">React &amp; Next.js apps</h2>
+                            <p>React · Next.js · TypeScript · Tailwind CSS</p>
+                        </article>
+                        <article class="cap" data-build="card.cap-02">
+                            <div class="cap-top mono"><span class="cap-idx">02.</span><span>Backend</span></div>
+                            <h2 class="cap-title">Secure REST APIs</h2>
+                            <p>Node.js · Express · MongoDB · JWT · RBAC</p>
+                        </article>
+                        <article class="cap" data-build="card.cap-03">
+                            <div class="cap-top mono"><span class="cap-idx">03.</span><span>GenAI</span></div>
+                            <h2 class="cap-title">RAG &amp; agentic AI</h2>
+                            <p>Python · FastAPI · Groq · Gemini · ChromaDB</p>
+                        </article>
+                        <ul class="hero-links mono" data-build="ul.links">
+                            <li><a href="https://github.com/girishgowda5478" target="_blank" rel="noopener">GitHub ↗</a></li>
+                            <li><a href="https://www.linkedin.com/in/girish-gowda-7ab431332" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                            <li><a href="https://wa.me/916361659776?text=Hi%20Girish%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">WhatsApp ↗</a></li>
+                            <li><a href="mailto:girishgowda5478@gmail.com">Email ↗</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 01 ABOUT ============ -->
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="sec-index mono" data-build="div.index"><span class="sec-num">// 01.00</span> SEC_ABOUT <span class="sec-count">INDEX [01 / 05]</span></div>
+                <header class="sec-head" data-build="h2.about">
+                    <p class="eyebrow mono">Developer profile</p>
+                    <h2>Background &amp; Philosophy</h2>
+                </header>
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <p data-build="p.bio">Full Stack Developer and AI Engineer with a <b>B.E. in Information Science &amp; Engineering</b> from <b>Nitte Meenakshi Institute of Technology</b> (CGPA 8.15) and a Diploma in Computer Science. I spent <b>six months as an intern at Center of CyberSecurity</b>, building a blockchain donation platform and an AI shopping assistant. Outside the internship I build GenAI systems: an agentic research assistant, a RAG data pipeline and an incident-investigation tool.</p>
+                        <blockquote data-build="blockquote.creed">Build it secure. Ship it live. Make it verifiable.</blockquote>
+                    </div>
+                    <aside class="about-side">
+                        <div class="kv" data-build="card.now">
+                            <span class="kv-k mono">Status</span>
+                            <span class="kv-v">Open to work</span>
+                            <span class="kv-s mono">Full Stack · AI Engineer roles</span>
+                        </div>
+                        <div class="kv" data-build="card.edu">
+                            <span class="kv-k mono">Education</span>
+                            <span class="kv-v">B.E. Information Science &amp; Engineering</span>
+                            <span class="kv-s mono">NMIT, Bengaluru · 2023–26 · CGPA 8.15</span>
+                            <span class="kv-v">Diploma in Computer Science &amp; Engineering</span>
+                            <span class="kv-s mono">PVP Polytechnic, Bengaluru · 2020–23 · CGPA 8.7</span>
+                        </div>
+                        <div class="kv" data-build="card.certs">
+                            <span class="kv-k mono">Certifications</span>
+                            <ul class="cert-list">
+                                <li><a>IBM Full Stack Software Developer <span class="mono">Coursera · 2025</span></a></li>
+                                <li><a>Full Stack Developer Certification <span class="mono">freeCodeCamp · 2025</span></a></li>
+                                <li><a>AI and ML Fundamentals <span class="mono">Google Cloud</span></a></li>
+                                <li><a>AI-ML, Data Science, Deep Learning <span class="mono">Infosys Springboard</span></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 02 STACK ============ -->
+        <section class="section" id="stack">
+            <div class="wrap">
+                <div class="sec-index mono" data-build="div.index"><span class="sec-num">// 02.00</span> SEC_STACK <span class="sec-count">INDEX [02 / 05]</span></div>
+                <header class="sec-head" data-build="h2.stack">
+                    <p class="eyebrow mono">Toolchain</p>
+                    <h2>The stack I ship with</h2>
+                </header>
+                <div class="stack-grid">
+                    <article class="stack-card" data-build="card.fe">
+                        <header><span class="mono">A /</span>
+                            <h3>Frontend</h3>
+                        </header>
+                        <ul class="chips"><li>React.js</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li></ul>
+                    </article>
+                    <article class="stack-card" data-build="card.be">
+                        <header><span class="mono">B /</span>
+                            <h3>Backend &amp; APIs</h3>
+                        </header>
+                        <ul class="chips"><li>Node.js</li><li>Express.js</li><li>FastAPI</li><li>Flask</li><li>REST APIs</li><li>SSE streaming</li><li>JWT</li><li>Role-based access</li></ul>
+                    </article>
+                    <article class="stack-card" data-build="card.genai">
+                        <header><span class="mono">C /</span>
+                            <h3>GenAI &amp; LLMs</h3>
+                        </header>
+                        <ul class="chips"><li>RAG</li><li>LLM APIs (Groq, Gemini, OpenAI)</li><li>Prompt engineering</li><li>Agentic workflows</li><li>Embeddings</li><li>Semantic search</li><li>FAISS</li><li>ChromaDB</li><li>Pinecone</li></ul>
+                    </article>
+                    <article class="stack-card" data-build="card.ml">
+                        <header><span class="mono">D /</span>
+                            <h3>AI / ML &amp; Data</h3>
+                        </header>
+                        <ul class="chips"><li>Machine learning</li><li>NLP</li><li>TensorFlow</li><li>scikit-learn</li><li>Model evaluation</li><li>Kafka</li><li>Spark (PySpark)</li><li>Delta Lake</li><li>Airflow</li><li>ETL / ELT</li><li>Soda Core</li></ul>
+                    </article>
+                    <article class="stack-card" data-build="card.db">
+                        <header><span class="mono">E /</span>
+                            <h3>Databases &amp; Blockchain</h3>
+                        </header>
+                        <ul class="chips"><li>MongoDB</li><li>MySQL</li><li>SQL</li><li>Solidity</li><li>Ethereum</li><li>Hardhat</li><li>MetaMask</li><li>ethers.js</li></ul>
+                    </article>
+                    <article class="stack-card" data-build="card.tools">
+                        <header><span class="mono">F /</span>
+                            <h3>Languages &amp; DevOps</h3>
+                        </header>
+                        <ul class="chips"><li>Python</li><li>Java</li><li>JavaScript</li><li>TypeScript</li><li>C++</li><li>Docker</li><li>Docker Compose</li><li>Git / GitHub</li><li>GitHub Actions</li><li>Pytest</li><li>Postman</li><li>Vercel</li><li>AWS S3</li><li>Google Cloud</li></ul>
+                    </article>
+                </div>
+            </div>
+            <div class="ticker" data-build="div.ticker" aria-hidden="true">
+                <div class="ticker-track">
+                    <span>Next.js</span><i>■</i><span>React</span><i>■</i><span>Node.js</span><i>■</i><span>FastAPI</span><i>■</i><span>RAG</span><i>■</i><span>Groq</span><i>■</i><span>Kafka</span><i>■</i><span>Spark</span><i>■</i><span>Delta Lake</span><i>■</i><span>MongoDB</span><i>■</i><span>Solidity</span><i>■</i><span>Docker</span><i>■</i>
+                    <span>Next.js</span><i>■</i><span>React</span><i>■</i><span>Node.js</span><i>■</i><span>FastAPI</span><i>■</i><span>RAG</span><i>■</i><span>Groq</span><i>■</i><span>Kafka</span><i>■</i><span>Spark</span><i>■</i><span>Delta Lake</span><i>■</i><span>MongoDB</span><i>■</i><span>Solidity</span><i>■</i><span>Docker</span><i>■</i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 03 PROJECTS ============ -->
+        <section class="section" id="projects">
+            <div class="wrap">
+                <div class="sec-index mono" data-build="div.index"><span class="sec-num">// 03.00</span> SEC_PROJECTS <span class="sec-count">INDEX [03 / 05]</span></div>
+                <header class="sec-head sec-head-split" data-build="h2.systems">
+                    <div>
+                        <p class="eyebrow mono">GenAI &amp; full-stack builds</p>
+                        <h2>Featured projects</h2>
+                    </div>
+                    <p class="sec-note">Two AI systems and two full-stack builds, with the numbers behind each.</p>
+                </header>
+
+                <article class="sys" id="prj-01">
+                    <div class="sys-info">
+                        <div class="sys-head" data-build="div.sys-head">
+                            <div class="sys-meta mono"><span class="sys-id">PRJ_01</span><span>Agentic AI · RAG</span><span class="sys-client">Live demo</span></div>
+                            <h3>ResearchMind AI: Agentic Research Assistant</h3>
+                        </div>
+                        <p data-build="p.desc">Breaks a question into sub-tasks, searches the web, retrieves from PDFs and writes a cited report, with a fact-checking stage that reviews claims and citations before anything is shown.</p>
+                        <div class="sys-foot" data-build="div.stack">
+                            <ul class="stack-line mono"><li>Python</li><li>FastAPI</li><li>Streamlit</li><li>Groq</li><li>ChromaDB</li><li>Tavily</li><li>Docker</li></ul>
+                            <a class="proof mono" href="https://github.com/girishgowda5478/Researchable-Mind-Ai" target="_blank" rel="noopener">GitHub ↗</a><a class="proof mono" href="https://researchable-mind-ai-girish-gowda.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a>
+                        </div>
+                    </div>
+                    <div class="demo spec" data-build="div.demo"><div class="demo-bar mono"><span class="demo-dots"><i></i><i></i><i></i></span><span class="demo-title">researchmind-ai · architecture</span><span class="demo-flag">Spec</span></div><dl class="spec-list"><div><dt class="mono">Pipeline</dt><dd>5 stages<small>Planner · web search · PDF retrieval · synthesizer</small></dd></div><div><dt class="mono">Quality</dt><dd>Fact-checking<small>Claims and citation consistency reviewed, PDF export</small></dd></div><div><dt class="mono">API</dt><dd>7 endpoints<small>FastAPI backend with SSE token streaming</small></dd></div><div><dt class="mono">Deployment</dt><dd>2 services<small>Streamlit frontend and API via Docker Compose</small></dd></div></dl></div>
+                </article>
+
+                <article class="sys" id="prj-02">
+                    <div class="sys-info">
+                        <div class="sys-head" data-build="div.sys-head">
+                            <div class="sys-meta mono"><span class="sys-id">PRJ_02</span><span>Data engineering · RAG</span><span class="sys-client">End to end</span></div>
+                            <h3>RAG Data Pipeline</h3>
+                        </div>
+                        <p data-build="p.desc">An end-to-end retrieval-augmented generation pipeline covering document ingestion, processing, vector indexing and context-grounded answering.</p>
+                        <div class="sys-foot" data-build="div.stack">
+                            <ul class="stack-line mono"><li>Python</li><li>Kafka</li><li>Spark</li><li>Delta Lake</li><li>Airflow</li><li>Pinecone</li><li>FastAPI</li></ul>
+                            <a class="proof mono" href="https://github.com/girishgowda5478/rag-data" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="demo spec" data-build="div.demo"><div class="demo-bar mono"><span class="demo-dots"><i></i><i></i><i></i></span><span class="demo-title">rag-pipeline · data layers</span><span class="demo-flag">Spec</span></div><dl class="spec-list"><div><dt class="mono">Layers</dt><dd>Bronze → Silver → Gold<small>Delta Lake tables processed in PySpark</small></dd></div><div><dt class="mono">Chunking</dt><dd>512 tokens<small>64-token overlap · deterministic SHA-256 chunk IDs</small></dd></div><div><dt class="mono">Data quality</dt><dd>26 checks<small>Soda Core across 3 layers · Airflow blocks promotion on failure</small></dd></div><div><dt class="mono">Serving</dt><dd>Pinecone + FastAPI<small>Context-grounded answers · OpenLineage tracking</small></dd></div></dl></div>
+                </article>
+
+                <article class="sys" id="prj-03">
+                    <div class="sys-info">
+                        <div class="sys-head" data-build="div.sys-head">
+                            <div class="sys-meta mono"><span class="sys-id">PRJ_03</span><span>Web3 · full stack</span><span class="sys-client">Internship</span></div>
+                            <h3>Blockchain Donation Platform</h3>
+                        </div>
+                        <p data-build="p.desc">A decentralized temple donation platform. Every donation is recorded on Ethereum smart contracts, so devotees can verify each transaction on-chain using its hash.</p>
+                        <div class="sys-foot" data-build="div.stack">
+                            <ul class="stack-line mono"><li>Next.js</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Solidity</li><li>Hardhat</li><li>MetaMask</li></ul>
+                            
+                        </div>
+                    </div>
+                    <div class="demo spec" data-build="div.demo"><div class="demo-bar mono"><span class="demo-dots"><i></i><i></i><i></i></span><span class="demo-title">donation-platform · architecture</span><span class="demo-flag">Spec</span></div><dl class="spec-list"><div><dt class="mono">Architecture</dt><dd>4 layers<small>Next.js · Node/Express · MongoDB · Solidity</small></dd></div><div><dt class="mono">Access control</dt><dd>3 roles · 8 endpoints<small>Super Admin · Temple Admin · Devotee</small></dd></div><div><dt class="mono">Automated on-chain</dt><dd>3 workflows<small>Temple registration · donations · withdrawals</small></dd></div><div><dt class="mono">Signing &amp; alerts</dt><dd>MetaMask + receipts<small>Real-time notifications, goal under 2 s</small></dd></div></dl></div>
+                </article>
+
+                <article class="sys" id="prj-04">
+                    <div class="sys-info">
+                        <div class="sys-head" data-build="div.sys-head">
+                            <div class="sys-meta mono"><span class="sys-id">PRJ_04</span><span>E-commerce · GenAI</span><span class="sys-client">Live on Vercel</span></div>
+                            <h3>Go-Cart: AI-Powered E-Commerce Platform</h3>
+                        </div>
+                        <p data-build="p.desc">A full-stack MERN store with cart, wishlist and checkout, a multi-vendor “Create Your Store” flow, a Plus membership tier, and a Gemini-powered shopping assistant grounded in live inventory.</p>
+                        <div class="sys-foot" data-build="div.stack">
+                            <ul class="stack-line mono"><li>Next.js</li><li>MongoDB</li><li>Node.js</li><li>Gemini API</li><li>Vercel</li></ul>
+                            <a class="proof mono" href="https://go-cart-orcin.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a class="proof mono" href="https://github.com/girishgowda5478/Go-cart" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="demo spec" data-build="div.demo"><div class="demo-bar mono"><span class="demo-dots"><i></i><i></i><i></i></span><span class="demo-title">go-cart · by the numbers</span><span class="demo-flag">Spec</span></div><dl class="spec-list"><div><dt class="mono">Catalogue</dt><dd>130+ products<small>13 categories · 18 brand filters</small></dd></div><div><dt class="mono">AI assistant</dt><dd>90% correct<small>50 test queries · live stock data, 10-message memory</small></dd></div><div><dt class="mono">Guardrails</dt><dd>Store-only scope<small>System prompts with brand tone, off-topic requests declined</small></dd></div><div><dt class="mono">API</dt><dd>8 endpoints<small>4 MongoDB collections · 40+ test cases</small></dd></div></dl></div>
+                </article>
+
+                <header class="sec-head more-head" data-build="h2.lab">
+                    <p class="eyebrow mono">Also built</p>
+                    <h2>More projects</h2>
+                </header>
+                <div class="lab-grid">
+                    <article class="lab-card" data-cat="ai" data-build="card.lab">
+                        <div class="lab-top mono"><span class="lab-tag">AI · incident response</span><span class="lab-status">8 tests passing</span></div>
+                        <h3>SentinelOps AI</h3>
+                        <p>A read-only tool that pulls evidence from application logs, ranks root-cause hypotheses and writes next diagnostic steps as structured incident-report JSON. A rule-based fallback keeps the API answering when the LLM is down.</p>
+                        <div class="lab-foot">
+                            <ul class="stack-line mono"><li>Python</li><li>FastAPI</li><li>Streamlit</li><li>Groq</li><li>Pytest</li></ul>
+                            <a class="proof mono" href="https://github.com/girishgowda5478/sentinelops_ai" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                    </article>
+                    <article class="lab-card" data-cat="web" data-build="card.lab">
+                        <div class="lab-top mono"><span class="lab-tag">Full stack · hiring</span><span class="lab-status">2 user roles</span></div>
+                        <h3>Role-Based Job Portal</h3>
+                        <p>Candidates and employers get profiles, resume uploads, job search and applications. JWT auth and role-based access protect 8 REST endpoints, with search averaging about 150 ms over 500 listings.</p>
+                        <div class="lab-foot">
+                            <ul class="stack-line mono"><li>React.js</li><li>TypeScript</li><li>Node.js</li><li>MongoDB</li></ul>
+                            <a class="proof mono" href="https://github.com/girishgowda5478/job-portal" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                    </article>
+                    <article class="lab-card" data-cat="ai" data-build="card.lab">
+                        <div class="lab-top mono"><span class="lab-tag">NLP · machine learning</span><span class="lab-status">90% test accuracy</span></div>
+                        <h3>Secure AI Chatbot</h3>
+                        <p>A TensorFlow intent classifier trained on 500+ examples across 10 intents, served through Flask REST endpoints and checked against 100+ test queries.</p>
+                        <div class="lab-foot">
+                            <ul class="stack-line mono"><li>Python</li><li>Flask</li><li>TensorFlow</li><li>NLP</li></ul>
+                            <a class="proof mono" href="https://github.com/girishgowda5478/chatbotproject" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 04 EXPERIENCE ============ -->
+        <section class="section" id="log">
+            <div class="wrap">
+                <div class="sec-index mono" data-build="div.index"><span class="sec-num">// 04.00</span> SEC_LOG <span class="sec-count">INDEX [04 / 05]</span></div>
+                <header class="sec-head" data-build="h2.log">
+                    <p class="eyebrow mono">Experience</p>
+                    <h2>Commit history</h2>
+                </header>
+                <ol class="log-list">
+                    <li class="log-item" data-build="li.entry">
+                        <div class="log-when mono">Jan 2026 → Jul 2026</div>
+                        <div class="log-what">
+                            <h3>Full Stack &amp; AI Engineer Intern</h3>
+                            <p class="log-org mono">Center of CyberSecurity</p>
+                            <p>Built a decentralized donation platform on Ethereum (Next.js, Node/Express, MongoDB, Solidity) with 8 protected API endpoints across 3 user roles and MetaMask signing. Also built and deployed a Gemini-powered shopping assistant for a MERN store, grounded in live MongoDB data across 130+ products, with scope guardrails and 10-message session memory.</p>
+                        </div>
+                        <span class="log-state mono">Merged</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ 05 CONTACT ============ -->
+        <section class="section contact" id="contact">
+            <div class="wrap">
+                <div class="sec-index mono" data-build="div.index"><span class="sec-num">// 05.00</span> SEC_CONTACT <span class="sec-count">INDEX [05 / 05]</span></div>
+                <div class="cta">
+                    <header class="cta-head" data-build="h2.contact">
+                        <p class="eyebrow mono">Open channel</p>
+                        <h2>Let’s build something<br> that ships.</h2>
+                        <p class="cta-sub">Hiring for a full stack or AI engineering role, or have a project in mind? Let’s talk.</p>
+                    </header>
+                    <div class="cta-actions" data-build="div.reach">
+                        <a class="cta-mail mono" href="mailto:girishgowda5478@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6h17v12h-17zM3.5 6.5l8.5 6.5 8.5-6.5" /></svg>girishgowda5478@gmail.com</a>
+                        <a class="btn btn-fill" href="assets/Girish-Gowda-FullStack-Resume.pdf" target="_blank" rel="noopener" type="application/pdf">Full Stack résumé ↗</a>
+                        <a class="btn btn-fill" href="assets/Girish-Gowda-AI-Resume.pdf" target="_blank" rel="noopener" type="application/pdf">AI Engineer résumé ↗</a>
+                    </div>
+                    <ul class="cta-links mono" data-build="ul.links">
+                        <li><a href="tel:+916361659776">+91 63616 59776</a></li>
+                        <li><a href="https://wa.me/916361659776?text=Hi%20Girish%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">WhatsApp ↗</a></li>
+                        <li><a href="https://www.linkedin.com/in/girish-gowda-7ab431332" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                        <li><a href="https://github.com/girishgowda5478" target="_blank" rel="noopener">GitHub ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="wrap foot-inner" data-build="footer">
+            <span class="mono">© 2026 Girish Gowda J</span>
+            <span class="mono foot-mid">Assembled live by an agent swarm · plain HTML, CSS &amp; JS</span>
+            <button type="button" class="replay mono" id="replay">↻ Replay build</button>
+        </div>
+    </footer>
+
+    <script src="script.js?v=12"></script>
+</body>
+
+</html>
